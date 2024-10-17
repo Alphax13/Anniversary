@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Happy Anniversary</title>
+  </head>
+
+  <body>
+    <h1 class="counter"></h1>
+    <h2 class="followers-txt">Happy Anniversary</h2>
+    <p class="thanks-txt">รักหนูที่สุดเลยนะคะ อยู่กับพี่ไปนานๆนะคะ!</p>
+    <button id="actionButton" class="btn-restart">ไปกันต่ออออ</button>
+
+    <script type="module" src="happy_10k_followers.js"></script>
+    <script>
+      document.getElementById("actionButton").addEventListener("click", function() {
+        window.location.href = "loveme/index.html"; 
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  --c1: #fbda61;
+  --c2: #ff5acd;
+  display: grid;
+  align-items: center;
+  place-items: center;
+  place-content: center;
+  font-family: "Itim", cursive;
+  padding-top: 15rem;
+  text-align: center;
+  background-image: url(https://images.hdqwalls.com/wallpapers/after-sunset-minimal-4k-zm.jpg);
+  background-size: cover;
+
+}
+
+.counter {
+  font-size: max(2rem, 1rem + 5vw);
+  font-variation-settings: "wght" var(--font-variation-weight, 600);
+  background: linear-gradient(45deg, var(--c2), var(--c1), var(--c2)); /* Apply the gradient */
+  -webkit-background-clip: text; /* Clip the background to the text (for WebKit browsers) */
+  -webkit-text-fill-color: transparent; /* Make the text transparent to show the background gradient */
+  background-clip: text; /* Clip the background to the text (standard) */
+  color: transparent; /* Make the text color transparent */
+}
+
+.followers-txt {
+  font-size: max(0.4rem, 0.4rem + 4vw);
+  font-variation-settings: "wght" var(--font-variation-weight, 500);
+  letter-spacing: 3px;
+  margin-bottom: 1rem;
+  color: #ff5acd;
+}
+.thanks-txt {
+  font-size: max(0.2rem, 0.2rem + 2vw);
+  font-variation-settings: "wght" var(--font-variation-weight, 500);
+  color: #fff;
+}
+.celebrate {
+  color: transparent;
+  background-clip: text;
+  background-color: #4158d0;
+  background-image: linear-gradient(45deg, var(--c2), var(--c1), var(--c2));
+  background-size: 200% auto;
+  filter: drop-shadow(white 1px 1px 0) drop-shadow(#fbda61 2px 2px 2px);
+  animation: bg 4s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+
+.btn-restart {
+  position: absolute;
+  bottom: 5rem;
+  cursor: pointer;
+  font: inherit;
+  font-size: 1.25rem;
+  font-variation-settings: "wght" 400;
+  padding: 0.5rem 2rem;
+  color: darkslateblue;
+  background: papayawhip;
+  border: 2px solid currentcolor;
+  box-shadow: inset white 0 0 0 2px;
+  border-radius: 0.15rem;
+}
+
+.btn-restart:active {
+  transform: translateY(1px);
+}
+
+.btn-restart:focus-visible {
+  outline-offset: 4px;
+}
+
+.btn-restart:focus-visible,
+.btn-restart:active {
+  color: black;
+  background-color: #f4e4ca;
+}
